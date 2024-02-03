@@ -1,0 +1,24 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid f0410e80-cff5-4834-aa8f-c0620bcf3262)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (wire (pts (xy 100.33 68.58) (xy 110.49 68.58))
+    (stroke (width 0) (type default))
+    (uuid 25266a25-effe-4e02-965a-33c77d7a144d)
+  )
+
+  (hierarchical_label "12V" (shape input) (at 100.33 68.58 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 20f882ed-c54d-4cec-a9ca-621ea6c24a59)
+  )
+  (hierarchical_label "SalidaRegulada" (shape input) (at 110.49 68.58 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 60b3498e-3e1f-4062-9f7c-6c750ea678e9)
+  )
+)

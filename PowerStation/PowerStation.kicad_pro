@@ -491,6 +491,14 @@
     [
       "bfaa4911-06ac-4eab-a369-73fbd18c1b0f",
       "salidas"
+    ],
+    [
+      "6c4e64a2-2669-42bc-ba17-850ba1173429",
+      "Reguladr de voltaje 1"
+    ],
+    [
+      "a86146fd-780a-43cf-90bd-518acee264d4",
+      "Reguladr de voltaje 2"
     ]
   ],
   "text_variables": {}
