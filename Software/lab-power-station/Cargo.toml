@@ -1,7 +1,7 @@
 [package]
 name = "lab-power-station"
 version = "0.1.0"
-authors = ["Chapahrroh-laptop <chapahrroh@gmail.com>"]
+authors = ["Eduardo Chaparro T. <chapahrroh@gmail.com>"]
 edition = "2021"
 license = "MIT OR Apache-2.0"
 

@@ -1,5 +1,6 @@
 [build]
 target = "avr-specs/avr-atmega328p.json"
+rustflags = ["-Clinker=rust-lld"]
 
 [target.'cfg(target_arch = "avr")']
 runner = "ravedude nano -cb 57600"
