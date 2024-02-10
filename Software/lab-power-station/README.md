@@ -4,7 +4,7 @@ lab-power-station
 Rust project for the _Arduino Nano_.
 
 ## Build Instructions
-1. run `sudo Doker build -t ardurustcompiler`.
+1. run `sudo Doker build -t ardurustcompiler .`
 
 2. run  `sudo docker run --rm --user "$(id -u)":"$(id -g)" -v "$PWD":/usr/src/myapp -w /usr/src/myapp ardurustcompiler cargo build --release`
 
