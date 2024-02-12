@@ -1702,7 +1702,7 @@
   (symbol (lib_id "power:GND") (at 212.09 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0dd515d9-86dd-497c-bb52-3491411ee1bd)
-    (property "Reference" "#PWR021" (at 212.09 97.79 0)
+    (property "Reference" "#PWR05" (at 212.09 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 212.09 96.52 0)
@@ -1718,7 +1718,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/e3cb0683-3127-494e-bd48-4ad5907a75ad"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -1727,7 +1727,7 @@
   (symbol (lib_id "power:GND") (at 240.03 90.17 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 43e0d99a-0e6c-4b0a-8b05-0a8ea34a75f8)
-    (property "Reference" "#PWR022" (at 240.03 96.52 0)
+    (property "Reference" "#PWR04" (at 240.03 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 240.03 95.25 0)
@@ -1743,7 +1743,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/e3cb0683-3127-494e-bd48-4ad5907a75ad"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -1752,7 +1752,7 @@
   (symbol (lib_id "Connector:Conn_01x05_Pin") (at 158.75 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6083c3e0-41df-4b6a-acc5-a1dc4f40af39)
-    (property "Reference" "J9" (at 159.385 30.48 0)
+    (property "Reference" "J2" (at 159.385 30.48 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "control" (at 159.385 33.02 0)
@@ -1772,7 +1772,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/e3cb0683-3127-494e-bd48-4ad5907a75ad"
-          (reference "J9") (unit 1)
+          (reference "J2") (unit 1)
         )
       )
     )
@@ -1781,7 +1781,7 @@
   (symbol (lib_id "Connector:Conn_01x10_Pin") (at 226.06 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6a739629-6ef4-4625-a6f1-f2677f0001fa)
-    (property "Reference" "J10" (at 226.695 72.39 0)
+    (property "Reference" "J8" (at 226.695 72.39 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "GND" (at 226.695 74.93 0)
@@ -1806,7 +1806,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/e3cb0683-3127-494e-bd48-4ad5907a75ad"
-          (reference "J10") (unit 1)
+          (reference "J8") (unit 1)
         )
       )
     )
@@ -1815,7 +1815,7 @@
   (symbol (lib_id "Connector:Conn_01x10_Pin") (at 198.12 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 749b9cfa-6a2f-4080-ac52-71b5a6e519db)
-    (property "Reference" "J12" (at 198.755 73.66 0)
+    (property "Reference" "J9" (at 198.755 73.66 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "GND" (at 198.755 76.2 0)
@@ -1840,7 +1840,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/e3cb0683-3127-494e-bd48-4ad5907a75ad"
-          (reference "J12") (unit 1)
+          (reference "J9") (unit 1)
         )
       )
     )
@@ -1849,7 +1849,7 @@
   (symbol (lib_id "Connector:Conn_01x05_Pin") (at 120.65 34.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7b306383-7ea2-4fb4-860a-f00f238f5750)
-    (property "Reference" "J2" (at 121.285 24.13 0)
+    (property "Reference" "J1" (at 121.285 24.13 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "12VA" (at 121.285 26.67 0)
@@ -1869,7 +1869,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/e3cb0683-3127-494e-bd48-4ad5907a75ad"
-          (reference "J2") (unit 1)
+          (reference "J1") (unit 1)
         )
       )
     )
@@ -1878,7 +1878,7 @@
   (symbol (lib_id "Connector:Conn_01x10_Pin") (at 120.65 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7e92a099-104e-4d3c-baa2-f5f7ccaf0e3c)
-    (property "Reference" "J7" (at 121.285 107.95 0)
+    (property "Reference" "J12" (at 121.285 107.95 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "3V3" (at 121.285 110.49 0)
@@ -1903,7 +1903,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/e3cb0683-3127-494e-bd48-4ad5907a75ad"
-          (reference "J7") (unit 1)
+          (reference "J12") (unit 1)
         )
       )
     )
@@ -1912,7 +1912,7 @@
   (symbol (lib_id "Connector:Conn_01x10_Pin") (at 226.06 49.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8db98dd4-c576-4fc6-9c90-802122088a2a)
-    (property "Reference" "J13" (at 226.695 34.29 0)
+    (property "Reference" "J5" (at 226.695 34.29 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "GND" (at 226.695 36.83 0)
@@ -1937,7 +1937,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/e3cb0683-3127-494e-bd48-4ad5907a75ad"
-          (reference "J13") (unit 1)
+          (reference "J5") (unit 1)
         )
       )
     )
@@ -1946,7 +1946,7 @@
   (symbol (lib_id "Connector:Conn_01x03_Pin") (at 120.65 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 98b725fe-a177-45e0-87ae-c44b8e4c486f)
-    (property "Reference" "J4" (at 121.285 54.61 0)
+    (property "Reference" "J6" (at 121.285 54.61 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "12VC" (at 121.285 57.15 0)
@@ -1964,7 +1964,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/e3cb0683-3127-494e-bd48-4ad5907a75ad"
-          (reference "J4") (unit 1)
+          (reference "J6") (unit 1)
         )
       )
     )
@@ -1973,7 +1973,7 @@
   (symbol (lib_id "Connector:Conn_01x10_Pin") (at 196.85 49.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a833c710-e8a6-4cf6-9947-73992a9653ae)
-    (property "Reference" "J11" (at 197.485 34.29 0)
+    (property "Reference" "J4" (at 197.485 34.29 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "GND" (at 197.485 36.83 0)
@@ -1998,7 +1998,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/e3cb0683-3127-494e-bd48-4ad5907a75ad"
-          (reference "J11") (unit 1)
+          (reference "J4") (unit 1)
         )
       )
     )
@@ -2007,7 +2007,7 @@
   (symbol (lib_id "Connector:Conn_01x05_Pin") (at 120.65 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b25ce803-a576-4ac6-921a-42992ab7232c)
-    (property "Reference" "J6" (at 121.285 90.17 0)
+    (property "Reference" "J11" (at 121.285 90.17 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "12VE" (at 121.285 92.71 0)
@@ -2027,7 +2027,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/e3cb0683-3127-494e-bd48-4ad5907a75ad"
-          (reference "J6") (unit 1)
+          (reference "J11") (unit 1)
         )
       )
     )
@@ -2036,7 +2036,7 @@
   (symbol (lib_id "Connector:Conn_01x07_Socket") (at 120.65 80.01 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c239c70f-3eef-4dea-9c7d-9d9d1640a7c4)
-    (property "Reference" "J5" (at 121.285 67.31 0)
+    (property "Reference" "J7" (at 121.285 67.31 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "12VD" (at 121.285 69.85 0)
@@ -2058,7 +2058,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/e3cb0683-3127-494e-bd48-4ad5907a75ad"
-          (reference "J5") (unit 1)
+          (reference "J7") (unit 1)
         )
       )
     )
@@ -2067,7 +2067,7 @@
   (symbol (lib_id "power:GND") (at 210.82 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c2f21f77-f7ca-4a50-818b-991805425073)
-    (property "Reference" "#PWR023" (at 210.82 58.42 0)
+    (property "Reference" "#PWR02" (at 210.82 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 210.82 57.15 0)
@@ -2083,7 +2083,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/e3cb0683-3127-494e-bd48-4ad5907a75ad"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
     )
@@ -2092,7 +2092,7 @@
   (symbol (lib_id "power:GND") (at 240.03 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cb7c2ab2-0f16-4ba3-8416-f7aaba2f906f)
-    (property "Reference" "#PWR024" (at 240.03 58.42 0)
+    (property "Reference" "#PWR03" (at 240.03 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 240.03 57.15 0)
@@ -2108,7 +2108,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/e3cb0683-3127-494e-bd48-4ad5907a75ad"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -2144,7 +2144,7 @@
   (symbol (lib_id "Connector:Conn_01x09_Pin") (at 146.05 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fe61d591-cf03-49e5-bff2-906530dbcc9d)
-    (property "Reference" "J8" (at 146.685 76.2 0)
+    (property "Reference" "J10" (at 146.685 76.2 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "5V" (at 146.685 78.74 0)
@@ -2168,7 +2168,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/e3cb0683-3127-494e-bd48-4ad5907a75ad"
-          (reference "J8") (unit 1)
+          (reference "J10") (unit 1)
         )
       )
     )
