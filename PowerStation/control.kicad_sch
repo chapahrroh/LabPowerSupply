@@ -385,6 +385,10 @@
     (stroke (width 0) (type default))
     (uuid 303b86c6-2a79-4bbe-ae3e-633c09304fb6)
   )
+  (wire (pts (xy 108.204 93.98) (xy 111.76 93.98))
+    (stroke (width 0) (type default))
+    (uuid 4d942389-3985-4941-aa1a-a7acd9dc497b)
+  )
   (wire (pts (xy 137.16 88.9) (xy 139.7 88.9))
     (stroke (width 0) (type default))
     (uuid 54f0280c-a034-41eb-be45-a1a3c1ad5a67)
@@ -453,6 +457,10 @@
     (stroke (width 0) (type default))
     (uuid ec1f42d8-ca4a-45d3-acf1-5906414ab98f)
   )
+  (wire (pts (xy 108.204 96.52) (xy 111.76 96.52))
+    (stroke (width 0) (type default))
+    (uuid ed4c3cb3-973d-4ab1-a354-cb8c9c3633f9)
+  )
   (wire (pts (xy 107.95 73.66) (xy 111.76 73.66))
     (stroke (width 0) (type default))
     (uuid ed53f3e6-6810-460b-8f77-36296f57d35b)
@@ -464,6 +472,11 @@
   (wire (pts (xy 124.46 110.49) (xy 125.73 110.49))
     (stroke (width 0) (type default))
     (uuid f3f1122a-b79d-4da3-b1e9-71df4561d0f4)
+  )
+
+  (label "AREF" (at 146.558 76.2 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid ef123e1f-47af-447a-a22c-11f6655423be)
   )
 
   (hierarchical_label "5V" (shape input) (at 121.92 52.07 90) (fields_autoplaced)
@@ -490,6 +503,10 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 68c9c56f-f8bb-49ea-9066-e9dc4568f8c8)
   )
+  (hierarchical_label "digitalPin11" (shape input) (at 108.204 96.52 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 7257a30c-03fb-437c-8571-8e69d8dc4ea1)
+  )
   (hierarchical_label "analogIN3" (shape input) (at 139.7 86.36 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 7b0372e6-d5d8-4d9f-a688-179d983ad70a)
@@ -514,6 +531,10 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid a7ade3cd-4a9d-4f7e-9ba7-383a3b3c9ca4)
   )
+  (hierarchical_label "digitalPin10" (shape input) (at 108.204 93.98 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid e5ae8097-593e-4cad-9e2f-383f6b69212d)
+  )
   (hierarchical_label "digitalPin1" (shape input) (at 107.95 71.12 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid edaff81b-63b5-4d00-a8fa-7ef5ea3cf47e)
@@ -530,7 +551,7 @@
   (symbol (lib_id "power:GND") (at 153.67 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 186c9dc1-3969-4d8b-b96a-7fa450d3643c)
-    (property "Reference" "#PWR019" (at 153.67 72.39 0)
+    (property "Reference" "#PWR07" (at 153.67 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 153.67 71.12 0)
@@ -546,7 +567,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/d71487c1-0901-43ff-b529-103a258ba6bc"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -555,13 +576,13 @@
   (symbol (lib_id "Device:C") (at 153.67 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 32a5661e-6b10-4a55-9e46-004b5fe3aac1)
-    (property "Reference" "C5" (at 156.21 62.23 0)
+    (property "Reference" "C2" (at 156.21 62.23 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10 uF" (at 154.94 64.77 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 154.6352 66.04 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 154.6352 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 153.67 62.23 0)
@@ -572,7 +593,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/d71487c1-0901-43ff-b529-103a258ba6bc"
-          (reference "C5") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
     )
@@ -581,13 +602,13 @@
   (symbol (lib_id "Device:R") (at 161.29 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4ed4765c-da31-4d2d-9815-d40336dd5d8f)
-    (property "Reference" "R7" (at 163.83 69.85 0)
+    (property "Reference" "R1" (at 163.83 69.85 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "909 ohm" (at 163.83 72.39 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 159.512 71.12 90)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 159.512 71.12 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 161.29 71.12 0)
@@ -598,7 +619,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/d71487c1-0901-43ff-b529-103a258ba6bc"
-          (reference "R7") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -607,7 +628,7 @@
   (symbol (lib_id "power:GND") (at 161.29 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 51481f2f-ae8b-48cd-b21a-5138145a24a4)
-    (property "Reference" "#PWR018" (at 161.29 91.44 0)
+    (property "Reference" "#PWR08" (at 161.29 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 161.29 90.17 0)
@@ -623,7 +644,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/d71487c1-0901-43ff-b529-103a258ba6bc"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -686,7 +707,7 @@
   (symbol (lib_id "power:GND") (at 143.51 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c0b32140-f49d-415a-bc86-ee2efa7109fc)
-    (property "Reference" "#PWR020" (at 143.51 72.39 0)
+    (property "Reference" "#PWR06" (at 143.51 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 143.51 71.12 0)
@@ -702,7 +723,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/d71487c1-0901-43ff-b529-103a258ba6bc"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -711,13 +732,13 @@
   (symbol (lib_id "Device:C") (at 143.51 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ce73ffd8-356e-407a-97c6-1930f62b1fd9)
-    (property "Reference" "C6" (at 146.05 62.23 0)
+    (property "Reference" "C1" (at 146.05 62.23 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1 uF" (at 146.05 64.77 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 144.4752 66.04 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 142.24 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 143.51 62.23 0)
@@ -728,7 +749,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/d71487c1-0901-43ff-b529-103a258ba6bc"
-          (reference "C6") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
     )
@@ -737,7 +758,7 @@
   (symbol (lib_id "Reference_Voltage:LM4040DBZ-4.1") (at 161.29 81.28 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e9632956-c265-4a9b-acaf-2280ec39dd4c)
-    (property "Reference" "U4" (at 163.83 80.01 90)
+    (property "Reference" "U1" (at 163.83 80.01 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LM4040DBZ-4.1" (at 163.83 82.55 90)
@@ -754,7 +775,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/d71487c1-0901-43ff-b529-103a258ba6bc"
-          (reference "U4") (unit 1)
+          (reference "U1") (unit 1)
         )
       )
     )
@@ -763,7 +784,7 @@
   (symbol (lib_id "power:GND") (at 125.73 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f227d691-de7a-45f8-b30d-b6dd3b097d22)
-    (property "Reference" "#PWR017" (at 125.73 116.84 0)
+    (property "Reference" "#PWR09" (at 125.73 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 125.73 115.57 0)
@@ -779,7 +800,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/d71487c1-0901-43ff-b529-103a258ba6bc"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )

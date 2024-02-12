@@ -219,11 +219,11 @@
     (uuid f41d79e3-b90c-483c-b506-c5e3ed3debd6)
   )
 
-  (wire (pts (xy 177.8 101.6) (xy 177.8 104.14))
+  (wire (pts (xy 177.8 99.568) (xy 177.8 104.14))
     (stroke (width 0) (type default))
     (uuid 07782af9-d278-41e0-a012-bfb20db52c3b)
   )
-  (wire (pts (xy 177.8 58.42) (xy 177.8 60.96))
+  (wire (pts (xy 177.8 56.134) (xy 177.8 60.96))
     (stroke (width 0) (type default))
     (uuid 0fd7ee15-eed0-4ac9-84e1-adfd8f4d86e4)
   )
@@ -242,6 +242,10 @@
   (wire (pts (xy 106.68 80.01) (xy 121.92 80.01))
     (stroke (width 0) (type default))
     (uuid 18595ac9-b7fc-44ba-a5fd-c9df63908aaf)
+  )
+  (wire (pts (xy 210.566 56.134) (xy 177.8 56.134))
+    (stroke (width 0) (type default))
+    (uuid 24e4253e-b5d8-4940-bf5b-7b76641cce87)
   )
   (wire (pts (xy 121.92 107.95) (xy 127 107.95))
     (stroke (width 0) (type default))
@@ -279,6 +283,10 @@
     (stroke (width 0) (type default))
     (uuid 634893d8-ff23-41db-9a4c-3b79101e77d1)
   )
+  (wire (pts (xy 211.328 106.68) (xy 211.328 99.568))
+    (stroke (width 0) (type default))
+    (uuid 68392bd7-20ce-4439-a42d-35e61747a26b)
+  )
   (wire (pts (xy 107.95 107.95) (xy 121.92 107.95))
     (stroke (width 0) (type default))
     (uuid 7b43e292-f942-496d-babd-1cb6948e532d)
@@ -306,6 +314,14 @@
   (wire (pts (xy 190.5 83.82) (xy 190.5 85.09))
     (stroke (width 0) (type default))
     (uuid a9e8f820-4f66-4f75-b5bc-3611001832ac)
+  )
+  (wire (pts (xy 211.328 99.568) (xy 177.8 99.568))
+    (stroke (width 0) (type default))
+    (uuid ac369086-25dd-4db1-b951-bed75dbcbaa2)
+  )
+  (wire (pts (xy 210.566 60.198) (xy 210.566 56.134))
+    (stroke (width 0) (type default))
+    (uuid acefb63d-34f3-4511-be0a-84d00a3e1825)
   )
   (wire (pts (xy 187.96 114.3) (xy 195.58 114.3))
     (stroke (width 0) (type default))
@@ -384,7 +400,7 @@
   (symbol (lib_id "power:GND") (at 177.8 132.08 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1ebfb9ba-7f5b-43fb-b1ee-2dba3e2c9dbe)
-    (property "Reference" "#PWR06" (at 177.8 138.43 0)
+    (property "Reference" "#PWR021" (at 177.8 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 177.8 137.16 0)
@@ -400,7 +416,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/c01debe4-8002-4a12-b87b-3b3aaab1ca2b"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
@@ -409,13 +425,13 @@
   (symbol (lib_id "Device:R") (at 107.95 102.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 24bbb9a9-3c74-4989-8dd2-3f90a04c2b04)
-    (property "Reference" "R5" (at 110.49 101.6 0)
+    (property "Reference" "R4" (at 110.49 101.6 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1M ohm" (at 110.49 104.14 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 106.172 102.87 90)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 106.172 102.87 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 107.95 102.87 0)
@@ -426,7 +442,33 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/c01debe4-8002-4a12-b87b-3b3aaab1ca2b"
-          (reference "R5") (unit 1)
+          (reference "R4") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C") (at 211.328 110.49 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 28d12a87-9f15-45fc-b3b2-af48e221a92b)
+    (property "Reference" "C8" (at 214.63 109.22 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10nF" (at 214.63 111.76 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 212.2932 114.3 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 211.328 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 62bd73d8-4b2a-4bbc-8fbc-6f6a4f0e12ec))
+    (pin "2" (uuid dd75dcef-2899-4847-9ed9-eb245e9c6388))
+    (instances
+      (project "PowerStation"
+        (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/c01debe4-8002-4a12-b87b-3b3aaab1ca2b"
+          (reference "C8") (unit 1)
         )
       )
     )
@@ -435,7 +477,7 @@
   (symbol (lib_id "power:GND") (at 107.95 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 424f5579-203b-4a08-acbe-c11ad1479ad2)
-    (property "Reference" "#PWR08" (at 107.95 123.19 0)
+    (property "Reference" "#PWR019" (at 107.95 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 107.95 121.92 0)
@@ -451,7 +493,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/c01debe4-8002-4a12-b87b-3b3aaab1ca2b"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -460,7 +502,7 @@
   (symbol (lib_id "power:GND") (at 121.92 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4383f04a-5230-41a9-9cce-506b3a55615b)
-    (property "Reference" "#PWR09" (at 121.92 123.19 0)
+    (property "Reference" "#PWR020" (at 121.92 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 121.92 121.92 0)
@@ -476,7 +518,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/c01debe4-8002-4a12-b87b-3b3aaab1ca2b"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
     )
@@ -485,7 +527,7 @@
   (symbol (lib_id "Sensor_Current:ACS712xLCTR-20A") (at 177.8 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6330b3d8-222a-4b6c-85da-edd0234ae05c)
-    (property "Reference" "U1" (at 179.9941 58.42 0)
+    (property "Reference" "U2" (at 179.9941 58.42 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "ACS712xLCTR-20A" (at 179.9941 60.96 0)
@@ -508,7 +550,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/c01debe4-8002-4a12-b87b-3b3aaab1ca2b"
-          (reference "U1") (unit 1)
+          (reference "U2") (unit 1)
         )
       )
     )
@@ -517,13 +559,13 @@
   (symbol (lib_id "Device:C") (at 121.92 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 71720990-c3a2-4c20-8372-7f99a2c994e6)
-    (property "Reference" "C3" (at 125.73 82.55 0)
+    (property "Reference" "C4" (at 125.73 82.55 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 125.73 85.09 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 122.8852 87.63 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 122.8852 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 121.92 83.82 0)
@@ -534,7 +576,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/c01debe4-8002-4a12-b87b-3b3aaab1ca2b"
-          (reference "C3") (unit 1)
+          (reference "C4") (unit 1)
         )
       )
     )
@@ -543,7 +585,7 @@
   (symbol (lib_id "power:GND") (at 106.68 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 73324b8a-f0d5-4a12-b698-4b21c20c444a)
-    (property "Reference" "#PWR07" (at 106.68 95.25 0)
+    (property "Reference" "#PWR016" (at 106.68 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 106.68 93.98 0)
@@ -559,7 +601,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/c01debe4-8002-4a12-b87b-3b3aaab1ca2b"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -568,7 +610,7 @@
   (symbol (lib_id "power:GND") (at 121.92 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7dfcdb7d-4266-43e2-bad1-944f7ead21c2)
-    (property "Reference" "#PWR010" (at 121.92 95.25 0)
+    (property "Reference" "#PWR017" (at 121.92 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 121.92 93.98 0)
@@ -584,7 +626,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/c01debe4-8002-4a12-b87b-3b3aaab1ca2b"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -593,13 +635,13 @@
   (symbol (lib_id "Device:C") (at 190.5 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 83b6b063-dd36-4d6e-84f4-70fc1f3554be)
-    (property "Reference" "C1" (at 194.31 78.74 0)
+    (property "Reference" "C3" (at 194.31 78.74 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1nF" (at 194.31 81.28 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 191.4652 83.82 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 191.4652 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 190.5 80.01 0)
@@ -610,7 +652,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/c01debe4-8002-4a12-b87b-3b3aaab1ca2b"
-          (reference "C1") (unit 1)
+          (reference "C3") (unit 1)
         )
       )
     )
@@ -619,13 +661,13 @@
   (symbol (lib_id "Device:R") (at 106.68 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8676b891-3208-487f-b8d3-0792e49bf12b)
-    (property "Reference" "R3" (at 109.22 73.66 0)
+    (property "Reference" "R2" (at 109.22 73.66 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1M ohm" (at 109.22 76.2 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 104.902 74.93 90)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 104.902 74.93 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 106.68 74.93 0)
@@ -636,7 +678,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/c01debe4-8002-4a12-b87b-3b3aaab1ca2b"
-          (reference "R3") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -645,7 +687,7 @@
   (symbol (lib_id "Sensor_Current:ACS712xLCTR-20A") (at 177.8 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9497a238-7855-4958-a736-3600bb05e265)
-    (property "Reference" "U2" (at 179.9941 101.6 0)
+    (property "Reference" "U3" (at 179.9941 101.6 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "ACS712xLCTR-20A" (at 179.9941 104.14 0)
@@ -668,7 +710,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/c01debe4-8002-4a12-b87b-3b3aaab1ca2b"
-          (reference "U2") (unit 1)
+          (reference "U3") (unit 1)
         )
       )
     )
@@ -677,13 +719,13 @@
   (symbol (lib_id "Device:R") (at 106.68 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 97514690-a910-4c7c-b54b-a755a01d9cba)
-    (property "Reference" "R4" (at 109.22 83.82 0)
+    (property "Reference" "R3" (at 109.22 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100K ohm" (at 109.22 86.36 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 104.902 85.09 90)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 104.902 85.09 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 106.68 85.09 0)
@@ -694,7 +736,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/c01debe4-8002-4a12-b87b-3b3aaab1ca2b"
-          (reference "R4") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -703,13 +745,13 @@
   (symbol (lib_id "Device:R") (at 107.95 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bc91606f-9c31-46bc-b83a-98c477a8a43f)
-    (property "Reference" "R6" (at 110.49 111.76 0)
+    (property "Reference" "R5" (at 110.49 111.76 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100K ohm" (at 110.49 114.3 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 106.172 113.03 90)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 106.172 113.03 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 107.95 113.03 0)
@@ -720,7 +762,33 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/c01debe4-8002-4a12-b87b-3b3aaab1ca2b"
-          (reference "R6") (unit 1)
+          (reference "R5") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C") (at 210.566 64.008 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid bce5c04b-ae9d-4a62-a9f1-ab861a759eca)
+    (property "Reference" "C7" (at 214.376 62.738 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10nF" (at 214.376 65.278 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 211.5312 67.818 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 210.566 64.008 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f63f94d3-b320-4695-9d02-08fd7e7bd2fa))
+    (pin "2" (uuid d5367b1a-165d-40b5-931f-dd2755ea94fc))
+    (instances
+      (project "PowerStation"
+        (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/c01debe4-8002-4a12-b87b-3b3aaab1ca2b"
+          (reference "C7") (unit 1)
         )
       )
     )
@@ -729,13 +797,13 @@
   (symbol (lib_id "Device:C") (at 121.92 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c190532b-3667-4c39-8041-5e92a60006f3)
-    (property "Reference" "C4" (at 125.73 110.49 0)
+    (property "Reference" "C5" (at 125.73 110.49 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 125.73 113.03 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 122.8852 115.57 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 122.8852 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 121.92 111.76 0)
@@ -746,7 +814,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/c01debe4-8002-4a12-b87b-3b3aaab1ca2b"
-          (reference "C4") (unit 1)
+          (reference "C5") (unit 1)
         )
       )
     )
@@ -755,13 +823,13 @@
   (symbol (lib_id "Device:C") (at 190.5 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d454e0d5-aa81-4174-9353-4e9d5fc007a3)
-    (property "Reference" "C2" (at 194.31 121.92 0)
+    (property "Reference" "C6" (at 194.31 121.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "C" (at 194.31 124.46 0)
+    (property "Value" "1nf" (at 194.31 124.46 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 191.4652 127 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 191.4652 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 190.5 123.19 0)
@@ -772,7 +840,7 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/c01debe4-8002-4a12-b87b-3b3aaab1ca2b"
-          (reference "C2") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
     )
@@ -781,7 +849,7 @@
   (symbol (lib_id "power:GND") (at 177.8 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e716c2ec-97cc-4ad3-a48b-7785742dbb73)
-    (property "Reference" "#PWR05" (at 177.8 95.25 0)
+    (property "Reference" "#PWR018" (at 177.8 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 177.8 93.98 0)
@@ -797,7 +865,57 @@
     (instances
       (project "PowerStation"
         (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/c01debe4-8002-4a12-b87b-3b3aaab1ca2b"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR018") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 211.328 114.3 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid f578d6f9-c5bf-475a-8c2a-d429163d2474)
+    (property "Reference" "#PWR024" (at 211.328 120.65 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 211.328 119.38 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 211.328 114.3 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 211.328 114.3 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid eef4a631-18c1-47f7-a08e-1a96050146f0))
+    (instances
+      (project "PowerStation"
+        (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/c01debe4-8002-4a12-b87b-3b3aaab1ca2b"
+          (reference "#PWR024") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 210.566 67.818 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid fcd1b11e-c0ee-4243-8e11-794f71333d6b)
+    (property "Reference" "#PWR027" (at 210.566 74.168 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 210.566 72.898 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 210.566 67.818 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 210.566 67.818 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f7223914-89fe-43af-aa26-e8677b5b7669))
+    (instances
+      (project "PowerStation"
+        (path "/b9c1e1ca-72f8-499b-86c1-59e3d070e292/c01debe4-8002-4a12-b87b-3b3aaab1ca2b"
+          (reference "#PWR027") (unit 1)
         )
       )
     )
