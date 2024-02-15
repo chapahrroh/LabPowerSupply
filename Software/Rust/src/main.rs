@@ -15,8 +15,7 @@ fn main() -> ! {
     let pins = arduino_hal::pins!(peripherals);
 
     let mut led = pins.d13.into_output();
-fgdfgdf
-dfgdfg
+
     loop{
         led.toggle();
         arduino_hal::delay_ms(1000);
